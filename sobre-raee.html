@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sobre RAEE — Educación Ambiental | EcoRAEE Trujillo</title>
+    <meta name="description" content="Centro de educación ambiental: artículos, consejos y recursos multimedia para manejar correctamente los RAEE en Trujillo." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/raee.js" defer></script>
+  </head>
+  <body>
+    <!-- Header / Navegación -->
+    <header class="site-header edu-hero">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="EcoRAEE Trujillo">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+              <path d="M12 2c4.97 0 9 4.03 9 9 0 5.52-4.48 10-10 10-4.97 0-9-4.03-9-9 0-1.17.22-2.29.63-3.32 2.03 2.84 5.32 4.69 9.02 4.69 2.55 0 4.88-.9 6.7-2.41C18.46 6.9 15.5 5 12 5 9.96 5 8.08 5.72 6.6 6.93 8 4.32 9.97 2 12 2z" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="brand-name">EcoRAEE Trujillo</span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html">Inicio</a>
+          <a href="sobre-raee.html" aria-current="page">Sobre RAEE</a>
+          <a href="puntos-acopio.html">Puntos de Acopio</a>
+          <a href="noticias.html">Noticias</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+
+      <section class="edu-head">
+        <div class="container edu-head-inner">
+          <div class="edu-icon" aria-hidden="true">📚</div>
+          <h1 class="hero-title">Centro de Educación Ambiental</h1>
+          <p class="hero-subtitle">Aprende sobre el manejo responsable de residuos electrónicos y contribuye al cuidado del planeta.</p>
+        </div>
+      </section>
+    </header>
+
+    <!-- Barra de categorías (chips) -->
+    <section class="chip-bar-wrap">
+      <div class="container">
+        <div class="chip-scroller" id="chipScroller" aria-label="Categorías de contenido">
+          <button class="chip active" data-filter="all">Todos</button>
+          <button class="chip" data-filter="basico">Qué son los RAEE</button>
+          <button class="chip" data-filter="reciclaje">Cómo Reciclar</button>
+          <button class="chip" data-filter="impacto">Impacto Ambiental</button>
+          <button class="chip" data-filter="consejos">Consejos Prácticos</button>
+        </div>
+        <div class="chip-progress"><span id="chipProgress"></span></div>
+        <div class="chip-arrows">
+          <button class="chip-arrow" id="chipPrev" aria-label="Anterior">‹</button>
+          <button class="chip-arrow" id="chipNext" aria-label="Siguiente">›</button>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Contenido educativo -->
+    <main class="edu-main">
+      <div class="container edu-grid">
+        <!-- Introducción: ¿Qué son los RAEE? -->
+        <article class="edu-card reveal" data-tags="basico impacto">
+          <div class="edu-card-body">
+            <h2>¿Qué son los RAEE?</h2>
+            <p>Los Residuos de Aparatos Eléctricos y Electrónicos (RAEE) incluyen equipos como celulares, laptops, televisores y electrodomésticos que han llegado al final de su vida útil. Requieren un manejo especializado por los materiales peligrosos que pueden contener.</p>
+            <ul class="checklist">
+              <li>Componentes recuperables: oro, plata, cobre y plásticos.</li>
+              <li>Sustancias peligrosas: plomo, mercurio, cadmio.</li>
+              <li>Reciclaje correcto = menos contaminación y más recursos.</li>
+              <li>Impulsa la economía circular local.</li>
+            </ul>
+          </div>
+          <aside class="media-card">
+            <button class="video-btn" data-video="https://www.youtube.com/embed/WII6QO2th4E?si=eJfJmtShWpoxAOtS" aria-label="Ver video introductorio">
+              <span class="video-icon">▶</span>
+              <span class="video-title">Video: Introducción a los RAEE</span>
+              <span class="video-time">Duración: 5:30 min</span>
+            </button>
+          </aside>
+        </article>
+
+        <!-- Cómo reciclar -->
+        <article class="edu-card reveal" data-tags="reciclaje consejos">
+          <div class="edu-card-body">
+            <h2>Cómo reciclar correctamente</h2>
+            <p>Sigue estas prácticas para disponer tus dispositivos de forma segura.</p>
+            <div class="accordion" data-accordion>
+              <button class="acc-item" aria-expanded="false">
+                <span>1. Respalda y borra tus datos</span>
+                <i>+</i>
+              </button>
+              <div class="acc-panel">
+                Realiza una copia de seguridad y restablece tu equipo a modo de fábrica antes de entregarlo.
+              </div>
+              <button class="acc-item" aria-expanded="false">
+                <span>2. Separa cables y baterías</span>
+                <i>+</i>
+              </button>
+              <div class="acc-panel">Coloca baterías en bolsas aparte y evita daños durante el transporte.</div>
+              <button class="acc-item" aria-expanded="false">
+                <span>3. Lleva al punto autorizado</span>
+                <i>+</i>
+              </button>
+              <div class="acc-panel">Ubica tu centro más cercano y entrega tus RAEE a personal autorizado.</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Impacto ambiental -->
+        <article class="edu-card reveal" data-tags="impacto basico">
+          <div class="edu-card-body">
+            <h2>Impacto ambiental de los RAEE</h2>
+            <p>Una gestión inadecuada puede liberar metales pesados y retardantes de llama al suelo y al agua. Reciclar evita emisiones y recupera materiales valiosos.</p>
+            <ul class="checklist">
+              <li>Reducción de tóxicos en rellenos sanitarios.</li>
+              <li>Ahorro de energía y materias primas.</li>
+              <li>Menor huella de carbono por reutilización de materiales.</li>
+            </ul>
+          </div>
+        </article>
+
+        
+
+      </div>
+    </main>
+
+    <!-- Artículos destacados en celdas coloridas -->
+    <section class="edu-articles">
+      <div class="container">
+        <div class="article-grid">
+          <article class="a-card reveal c-guide" data-tags="consejos reciclaje">
+            <div class="a-hero">
+              <span class="a-emoji">🧰</span>
+              <span class="a-badge">Guía práctica</span>
+            </div>
+            <div class="a-body">
+              <h3>Cómo preparar tus dispositivos para reciclar</h3>
+              <p>Antes de llevar tus aparatos electrónicos a un punto de acopio, sigue estos pasos para proteger tu información personal.</p>
+            </div>
+            <div class="a-meta">
+              <time datetime="2025-10-01">1 Oct 2025</time>
+              <a href="articulo-preparar-reciclar.html" class="a-link">Leer más →</a>
+            </div>
+          </article>
+
+          <article class="a-card reveal c-impact" data-tags="impacto basico">
+            <div class="a-hero">
+              <span class="a-emoji">🌍</span>
+              <span class="a-badge">Impacto ambiental</span>
+            </div>
+            <div class="a-body">
+              <h3>El problema de la basura electrónica mundial</h3>
+              <p>Cada año se generan más de 50 millones de toneladas de RAEE. Conoce las cifras y su impacto.</p>
+            </div>
+            <div class="a-meta">
+              <time datetime="2025-10-01">1 Oct 2025</time>
+              <a href="articulo-basura-electronica.html" class="a-link">Leer más →</a>
+            </div>
+          </article>
+
+          <article class="a-card reveal c-tips" data-tags="consejos">
+            <div class="a-hero">
+              <span class="a-emoji">💡</span>
+              <span class="a-badge">Consejos</span>
+            </div>
+            <div class="a-body">
+              <h3>10 formas de alargar la vida de tus dispositivos</h3>
+              <p>Buenas prácticas para reducir residuos electrónicos y mantener equipos funcionales.</p>
+            </div>
+            <div class="a-meta">
+              <time datetime="2025-09-30">30 Sep 2025</time>
+              <a href="articulo-vida-dispositivos.html" class="a-link">Leer más →</a>
+            </div>
+          </article>
+
+          <article class="a-card reveal c-recycle" data-tags="reciclaje">
+            <div class="a-hero">
+              <span class="a-emoji">♻️</span>
+              <span class="a-badge">Reciclaje</span>
+            </div>
+            <div class="a-body">
+              <h3>Proceso de reciclaje: de residuo a recurso</h3>
+              <p>Descubre cómo se transforman los aparatos en materiales aprovechables.</p>
+            </div>
+            <div class="a-meta">
+              <time datetime="2025-09-28">28 Sep 2025</time>
+              <a href="articulo-proceso-reciclaje.html" class="a-link">Leer más →</a>
+            </div>
+          </article>
+
+          <article class="a-card reveal c-health" data-tags="salud impacto">
+            <div class="a-hero">
+              <span class="a-emoji">⚠️</span>
+              <span class="a-badge">Salud</span>
+            </div>
+            <div class="a-body">
+              <h3>Sustancias tóxicas en dispositivos electrónicos</h3>
+              <p>Conoce riesgos y cómo minimizarlos con una correcta gestión de RAEE.</p>
+            </div>
+            <div class="a-meta">
+              <time datetime="2025-09-25">25 Sep 2025</time>
+              <a href="articulo-sustancias-toxicas.html" class="a-link">Leer más →</a>
+            </div>
+          </article>
+
+          <article class="a-card reveal c-edu" data-tags="educacion">
+            <div class="a-hero">
+              <span class="a-emoji">🎓</span>
+              <span class="a-badge">Educación</span>
+            </div>
+            <div class="a-body">
+              <h3>Programa escolar de reciclaje electrónico</h3>
+              <p>Material didáctico para implementar campañas de RAEE en instituciones educativas de Trujillo.</p>
+            </div>
+            <div class="a-meta">
+              <time datetime="2025-09-23">23 Sep 2025</time>
+              <a href="articulo-programa-escolar.html" class="a-link">Leer más →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal de video -->
+    <div class="modal" id="videoModal" aria-hidden="true" role="dialog" aria-label="Video educativo">
+      <div class="modal-backdrop" data-close></div>
+      <div class="modal-dialog">
+        <button class="modal-close" data-close aria-label="Cerrar">×</button>
+        <div class="modal-body" id="modalBody"></div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> EcoRAEE Trujillo • Educación Ambiental</p>
+        <a href="#top" class="to-top" aria-label="Volver arriba">↑</a>
+      </div>
+    </footer>
+  </body>
+  </html>

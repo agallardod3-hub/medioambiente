@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EcoRAEE Trujillo — Gestión Responsable de Residuos Electrónicos</title>
+    <meta name="description" content="Reciclaje de residuos electrónicos (RAEE) en Trujillo: puntos de acopio, información educativa y noticias ambientales." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/raee.js" defer></script>
+  </head>
+  <body>
+    <!-- Header / Navegación -->
+    <header class="site-header" id="inicio">
+      <div class="container nav-wrap">
+        <a href="#inicio" class="brand" aria-label="EcoRAEE Trujillo">
+          <span class="brand-mark" aria-hidden="true">
+            <!-- Simple leaf-like logo using SVG -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+              <path d="M12 2c4.97 0 9 4.03 9 9 0 5.52-4.48 10-10 10-4.97 0-9-4.03-9-9 0-1.17.22-2.29.63-3.32 2.03 2.84 5.32 4.69 9.02 4.69 2.55 0 4.88-.9 6.7-2.41C18.46 6.9 15.5 5 12 5 9.96 5 8.08 5.72 6.6 6.93 8 4.32 9.97 2 12 2z" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="brand-name">EcoRAEE Trujillo</span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html">Inicio</a>
+          <a href="sobre-raee.html">Sobre RAEE</a>
+          <a href="puntos-acopio.html">Puntos de Acopio</a>
+          <a href="noticias.html">Noticias</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <h1 class="hero-title">Recicla Responsablemente tus Residuos Electrónicos</h1>
+          <p class="hero-subtitle">Contribuye al cuidado del medio ambiente en Trujillo. Encuentra el punto de acopio más cercano, aprende sobre el manejo correcto de RAEE y mantente informado.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="puntos-acopio.html">Encuentra tu Punto de Acopio</a>
+            <a class="btn btn-ghost" href="sobre-raee.html">¿Qué son los RAEE?</a>
+          </div>
+        </div>
+        <div class="hero-bg" aria-hidden="true"></div>
+      </section>
+    </header>
+
+    <!-- Destacados / Features -->
+    <section class="features">
+      <div class="container grid-3">
+        <article class="card reveal">
+          <div class="card-icon">
+            <span class="emoji" aria-hidden="true">📍</span>
+          </div>
+          <h3>Mapa Interactivo</h3>
+          <p>Localiza fácilmente los puntos de acopio de residuos electrónicos más cercanos a tu ubicación en Trujillo.</p>
+          <a href="puntos-acopio.html" class="card-link">Ver Mapa</a>
+        </article>
+
+        <article class="card reveal" style="transition-delay: .05s;">
+          <div class="card-icon">
+            <span class="emoji" aria-hidden="true">📚</span>
+          </div>
+          <h3>Información Educativa</h3>
+          <p>Aprende sobre los RAEE, su impacto ambiental y las mejores prácticas para su reciclaje responsable.</p>
+          <a href="sobre-raee.html" class="card-link">Aprender más</a>
+        </article>
+
+        <article class="card reveal" style="transition-delay: .1s;">
+          <div class="card-icon">
+            <span class="emoji" aria-hidden="true">📰</span>
+          </div>
+          <h3>Noticias Ambientales</h3>
+          <p>Mantente informado con noticias y consejos relacionados con el reciclaje electrónico y sostenibilidad.</p>
+          <a href="noticias.html" class="card-link">Últimas noticias</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Acerca / Misión -->
+    <section class="about">
+      <div class="container">
+        <article class="about-card reveal">
+          <h2>Nuestra misión</h2>
+          <p>Facilitar el reciclaje responsable de residuos electrónicos en Trujillo, conectando a las personas con puntos de acopio y educación ambiental práctica.</p>
+          <ul class="checklist">
+            <li>Mapa claro y actualizado de centros de acopio.</li>
+            <li>Guías sencillas para preparar tus equipos.</li>
+            <li>Campañas y alianzas con instituciones locales.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Cómo funciona (inicio) -->
+    <section class="how">
+      <div class="container">
+        <div class="section-head">
+          <h2>¿Cómo funciona?</h2>
+          <p>Reciclar RAEE es sencillo y seguro. Solo sigue estos pasos.</p>
+        </div>
+        <div class="how-grid">
+          <div class="how-step reveal">
+            <span class="how-num">1</span>
+            <h3>Identifica tus RAEE</h3>
+            <p>Celulares, laptops, cargadores, audífonos, TVs, impresoras y más.</p>
+          </div>
+          <div class="how-step reveal" style="transition-delay:.05s;">
+            <span class="how-num">2</span>
+            <h3>Elige un punto</h3>
+            <p>Revisa el <a href="puntos-acopio.html">mapa de acopio</a> para encontrar el más cercano.</p>
+          </div>
+          <div class="how-step reveal" style="transition-delay:.1s;">
+            <span class="how-num">3</span>
+            <h3>Entrega segura</h3>
+            <p>Lleva tus equipos y contribuye al reciclaje responsable en Trujillo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cifras / Compromiso -->
+    <section class="stats">
+      <div class="container grid-3">
+        <div class="stat reveal" style="transition-delay:.05s;">
+          <strong>15+</strong>
+          <span>Puntos de acopio aliados</span>
+        </div>
+        <div class="stat reveal" style="transition-delay:.1s;">
+          <strong>100%</strong>
+          <span>Disposición responsable</span>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Preguntas frecuentes -->
+    <section class="about">
+      <div class="container">
+        <div class="section-head">
+          <h2>Preguntas frecuentes</h2>
+          <p>Resolvemos dudas comunes antes de reciclar tus equipos.</p>
+        </div>
+        <div class="about-card" data-accordion>
+          <button class="acc-item" aria-expanded="false"><span>¿Qué es un RAEE?</span><i>+</i></button>
+          <div class="acc-panel">Todo aparato eléctrico o electrónico en desuso, como celulares, laptops, TVs, electrodomésticos y accesorios.</div>
+          <button class="acc-item" aria-expanded="false"><span>¿Puedo llevar baterías sueltas?</span><i>+</i></button>
+          <div class="acc-panel">Sí. Colócalas en una bolsa aparte y entrégalas en puntos autorizados para tratamiento especial.</div>
+          <button class="acc-item" aria-expanded="false"><span>¿Mis datos estarán seguros?</span><i>+</i></button>
+          <div class="acc-panel">Haz copia de seguridad y restaura a fábrica. Revisa nuestra guía de borrado seguro antes de entregar tu equipo.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="cta-strip">
+      <div class="container cta-inner">
+        <h2>Da el primer paso hoy</h2>
+        <p>Encuentra tu punto de acopio y sé parte del cambio.</p>
+        <a class="btn btn-primary" href="puntos-acopio.html">Ir al Mapa</a>
+      </div>
+    </section>
+
+    
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> EcoRAEE Trujillo • Hecho con conciencia ambiental</p>
+        <a href="#inicio" class="to-top" aria-label="Volver arriba">↑</a>
+      </div>
+    </footer>
+  </body>
+  </html>
