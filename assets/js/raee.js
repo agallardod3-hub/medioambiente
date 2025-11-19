@@ -69,11 +69,13 @@ function setupVideoModal(){
     body.innerHTML = `<iframe src="${src}" title="Video educativo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
     modal.classList.add('show');
     modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
   };
   const close = () => {
     modal.classList.remove('show');
     modal.setAttribute('aria-hidden', 'true');
     body.innerHTML = '';
+    document.body.classList.remove('modal-open');
   };
 
   modal.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', close));
